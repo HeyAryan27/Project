@@ -39,11 +39,11 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:flex-row flex-wrap gap-4 mt-4">
         <div className="flex-1">
           <MyTeam />
         </div>
-        <div className="flex-1 w-fit lg:-ml-24">
+        <div className="flex-1 w-fit ">
           <ComplianceSection />
     
         </div>
