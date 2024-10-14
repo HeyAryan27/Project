@@ -60,41 +60,46 @@ const MyTeams = () => {
 
         <div className="mt-8 lg:mt-0 grid grid-cols-1 lg:grid-cols-3 lg:w-auto lg:h-full lg:justify-between">
           <ul className="text-sm space-y-4 sm:space-y-6 lg:space-y-8">
-            <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-blue-500 mr-2"></span>
+            <li className="flex items-center -mt-1">
+              <span className="w-5 h-4 rounded-full bg-blue-500 mr-2"></span>
               Ground Floor: 
+             
             </li>
             <b className="ml-6">{data.attendance.details.InOffice}%</b>
-            <li className="flex items-center">
+            <li className="flex items-center mt-2">
               <span className="w-4 h-4 rounded-full bg-yellow-500 mr-2"></span>
               Third Floor: 
-            </li>
-            <b className="ml-6">{data.attendance.details.Halfday}%</b>
+             
+            </li> <b className="ml-6 ">{data.attendance.details.Halfday}%</b>
+
           </ul>
 
           <ul className="text-sm space-y-4 sm:space-y-6 lg:space-y-8 lg:-mt-2">
             <li className="flex items-center">
               <span className="w-4 h-4 rounded-full bg-red-500 mr-2"></span>
               First Floor:
+             
             </li>
             <b className="ml-6">{data.attendance.details.Workfromhome}%</b>
-            <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-orange-500 mr-2"></span>
+            <li className="flex items-center mt-2">
+              <span className="w-5 h-4 rounded-full bg-orange-500 mr-2"></span>
               Kitchen Floor:
+              
             </li>
             <b className="ml-6">{data.attendance.details.Onleave}%</b>
           </ul>
 
           <ul className="text-sm space-y-2 lg:space-y-4 lg:-mt-2">
             <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-pink-500 mr-2"></span>
+              <span className="w-5 h-4 rounded-full bg-pink-500 mr-2"></span>
               Second Floor: 
+              
             </li>
             <b className="ml-6">{data.attendance.details.Workfromhome}%</b>
-  
-            <li className="flex items-center mt-4 lg:mt-8">
-              <span className="w-4 h-4 rounded-full bg-gray-500 mr-2 mt-4"></span>
+            <li className="flex items-center mt-8 lg:mt-8">
+              <span className="w-4 h-4 rounded-full bg-gray-500 mr-2 "></span>
               Others:  
+              
             </li>
             <b className="ml-6">{data.attendance.details.Onleave}%</b>
           </ul>
