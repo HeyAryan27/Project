@@ -14,13 +14,13 @@ import Icon from "./images/Icon.png";
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <div
-      className={`sm:h-screen fixed md:relative top-0 left-0 w-64 border-r  z-20 transform ${
+      className={`sm:h-screen fixed md:relative top-0 left-0 w-64   z-20 transform ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform duration-200 ease-in-out md:translate-x-0 bg-[#FFFAF5]`}
     >
       <div className="flex items-center justify-between h-28 px-2">
         <img src={Icon} alt="Icon" className="w-8 h-8 mr-2" />
-        <h3 className="font-inter text-[20px] font-semibold leading-tight tracking-custom text-left mr-12">
+        <h3 className="font-inter text-[20px] font-semibold leading-tight tracking-custom text-left mr-16">
           Sample Work
         </h3>
 

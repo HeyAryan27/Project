@@ -18,8 +18,9 @@ const milestones = [
 
 const ProjectTimeline = () => {
   return (
-    <div style={{ borderColor: 'rgba(189, 125, 73, 0.4)' }}>
-    <div className="bg-white p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-lg shadow-md border  mx-auto max-w-full sm:w-full lg:max-w-xl lg:h-full xl:max-w-5xl">
+    <div className="">
+    <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-lg  border-[rgba(189,125,73,0.4)] mx-auto max-w-full sm:w-full lg:max-w-xl lg:h-full xl:max-w-5xl"style={{border:"1px solid ", borderColor:"#BD7D4966"}}>
+
       <div className="text-left mb-4">
       <h2 className="text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left font-inter md:text-lg lg:text-xl">
   Project Timeline
@@ -59,7 +60,7 @@ const ProjectTimeline = () => {
       </div>
 
       <div className="w-full mt-4 sm:mt-6 flex justify-center lg:justify-start ">
-        <button className="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-md shadow-sm text-sm md:text-base lg:text-sm">
+        <button className="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-md shadow-sm text-sm md:text-base lg:text-sm lg:ml-6  ">
           Check More
         </button>
       </div>

@@ -5,7 +5,7 @@ import "../_styles/index.scss";
 
 const Recurit = () => {
   return (
-    <div className="p-4 shadow mb-4 bg-white">
+    <div className="p-4 shadow mb-4 ">
       {/* <PostedJobs/> */}
       {/* <InterviewMeetingInfo/> */}
     </div>

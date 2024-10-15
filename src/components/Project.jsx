@@ -62,14 +62,14 @@ const MyTeams = () => {
           <ul className="text-sm ml-2" style={{padding: "0px"}}>
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
               <span  className="w-2 h-2 font-inter rounded-full bg-[#2E90FA] mr-2 flex items-center justify-center"></span>
-              <span className="font-inter" style={{fontSize: "11px"}}>Ground Floor </span>
+              <span className="font-inter" style={{fontSize: "13px"}}>Ground Floor </span>
              
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.InOffice}%</span>
             <li style={{width: "120%"}}  className="flex items-center mt-4">
               <span className="w-2 h-2 font-inter rounded-full bg-[#EE46BC] mr-2 flex items-center justify-center"></span>
               
-              <span style={{fontSize: "11px"}}>Third Floor  </span>
+              <span style={{fontSize: "13px"}}>Third Floor  </span>
              
             </li> <span style={{fontSize: "20px", fontWeight: 600}}  className="ml-6 ">{data.attendance.details.Halfday}%</span>
 
@@ -79,13 +79,13 @@ const MyTeams = () => {
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
               <span className="w-2 h-2 font-inter rounded-full bg-[#F79009] mr-2 flex items-center justify-center"></span>
               
-              <span style={{fontSize: "11px"}}>First Floor  </span>
+              <span style={{fontSize: "13px"}}>First Floor  </span>
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Workfromhome}%</span>
             <li style={{width: "120%"}}  className="flex items-center mt-4">
               <span className="w-2 h-2 rounded-full bg-[#6172F3] mr-2 flex items-center justify-center"></span>
               
-              <span className="font-inter" style={{fontSize: "11px"}}>Kitchen Floor  </span>
+              <span className="font-inter" style={{fontSize: "13px"}}>Kitchen Floor  </span>
               
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Onleave}%</span>
@@ -95,13 +95,13 @@ const MyTeams = () => {
             <li style={{width: "120%"}} className="flex items-center -mt-1">
               <span className="w-2 h-2 font-inter rounded-full bg-[#12B76A] mr-2 flex items-center justify-center"></span>
               
-              <span className="font-inter" style={{fontSize: "11px"}}>Second Floor </span>
+              <span className="font-inter" style={{fontSize: "13px"}}>Second Floor </span>
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Workfromhome}%</span>
             <li style={{width: "120%"}} className="flex items-center mt-4">
               <span className="w-2 h-2 font-inter rounded-full bg-[#4E5BA6] mr-2 flex items-center justify-center"></span>
               
-              <span style={{fontSize: "11px"}}>Others  </span>
+              <span style={{fontSize: "13px"}}>Others  </span>
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Onleave}%</span>
           </ul>
