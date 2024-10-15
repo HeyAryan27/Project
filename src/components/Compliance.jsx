@@ -5,13 +5,17 @@ import File from './images/compliance.png'
 
 function App() {
   return (
-    <div className="col-span-1 w-full bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-full lg:w-full">
+    <div className="col-span-1 w-full bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-full lg:w-full" style={{ borderColor: 'rgba(189, 125, 73, 0.4)' }}>
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6">
         <div>
-          <h2 className="text-lg font-semibold">Compliance Section</h2>
-          <p className="text-sm text-gray-500">
-            You can check an overview of the project here
-          </p>
+        <h2 className="text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left font-inter">
+  Compliance Section
+</h2>
+
+<p className="text-[14px] font-normal leading-[20px] tracking-[-0.01em] text-left font-inter text-gray-500">
+  You can check an overview of the project here
+</p>
+
         </div>
         <span
           style={{ background: "#D1e3e2" }}

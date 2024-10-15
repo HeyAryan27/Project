@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div className="flex ">
+    <div className="flex bg-[#FFFAF5]">
     
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       

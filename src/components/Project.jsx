@@ -13,7 +13,7 @@ const MyTeams = () => {
   ];
 
   return (
-    <div className="col-span-1 w-full bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px] lg:w-full">
+    <div className="col-span-1 w-full  bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px]  lg:h-[350px] lg:w-full " style={{ borderColor: 'rgba(189, 125, 73, 0.4)' }}>
       <div className="flex justify-between items-center mb-4">
       <h2 className="font-inter text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left">
           Project Overview
@@ -23,7 +23,7 @@ const MyTeams = () => {
         </h2>
       </div>
 
-      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full">
+      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full 2xl:ml-24">
         <div className="flex font-inter justify-center lg:justify-start">
           <PieChart className="lg:mb-28" width={180} height={250}>
             <Pie
@@ -58,7 +58,7 @@ const MyTeams = () => {
           </span>
         </div>
 
-        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between">
+        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between 2xl:ml-60">
           <ul className="text-sm ml-2" style={{padding: "0px"}}>
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
               <span  className="w-2 h-2 font-inter rounded-full bg-[#2E90FA] mr-2 flex items-center justify-center"></span>

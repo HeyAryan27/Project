@@ -3,6 +3,7 @@ import Vector from './images/Vector.svg';
 import File from './images/File.png'
 import File1 from './images/groundFloor.png'
 import File2 from './images/building.png'
+import { IoCloudDownloadOutline } from "react-icons/io5";
 const documents = [
   {
     name: "First Floor Plan.doc",
@@ -42,7 +43,7 @@ const getSource = (key) => {
 
 const Timing = () => {
   return (
-    <div className="col-span-1 w-full  bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]">
+    <div className="col-span-1 w-full  bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]" style={{ borderColor: 'rgba(189, 125, 73, 0.4)' }}>
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
         <h2 className="font-inter text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left">
           Document Repository
@@ -54,20 +55,7 @@ const Timing = () => {
 
       <div className="mb-6 ">
         <label className="w-full flex justify-center items-center px-4 py-2 bg-white-100 text-black-500 rounded-lg border border-black-300 cursor-pointer hover:bg-gray-200 transition-all">
-          <svg
-            className="w-5 h-5 mr-2"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4v16m8-8H4"
-            ></path>
-          </svg>
+        <IoCloudDownloadOutline  className="w-18 m-1"/>
           <span>Upload Document</span>
           <input type="file" className="hidden" />
         </label>
