@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { FiSearch, FiBell, FiMenu, FiX } from "react-icons/fi";
 import { BiMessageDetail } from "react-icons/bi";
-
+import Notification from '/home/aryan/Documents/Dashs/Dash/src/components/images/Notification.png';
+import Create  from '/home/aryan/Documents/Dashs/Dash/src/components/images/Create.png';
+import Profile  from '/home/aryan/Documents/Dashs/Dash/src/components/images/Profile.png';
 const Navbar = ({ toggleSidebar }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isHeadingVisible, setIsHeadingVisible] = useState(true);
@@ -25,39 +27,25 @@ const Navbar = ({ toggleSidebar }) => {
           onClick={toggleSidebar}
         />
         {
-          <h1 className="  text-gray-800 md:text-xl font-semibold text-base sm:text-lg">
-            Green Building Monitoring 
-          </h1>
+         <h1 className="font-inter text-[20px] font-medium leading-[38px] text-left text-gray-800">
+         Green Building Monitoring
+       </h1>
         }
 
-        {/* <ul className="  flex space-x-4  " style={{fontSize:"15px"}}>
-            <li className=" text-blue-600 border-b-2 border-blue-600">Dashboard</li>
-        
-            <li className="text-gray-600 hover:text-blue-600 cursor-pointer">Leave</li>
-            <li className="text-gray-600 border-blue-600 cursor-pointer">Attendance</li>
-            <li className="text-gray-600 hover:text-blue-600 cursor-pointer">Performance</li>
-          </ul> */}
       </div>
 
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-2">
        
 
-      
+      <button className="cursor-pointer hidden md:block">
+      <img src={Create} alt="Create" className="w-8 h-8 mr-2" /></button>
+<button className="cursor-pointer hidden md:block">
+      <img src={Notification} alt="Notification" className="w-12 h-12 mr-2" /></button>
+       <button className="cursor-pointer hidden md:block">
+       <img src={Profile} alt="Profile" className="w-8 h-8 mr-2" />
+       </button>
 
-        <FiBell
-          className="text-gray-500 cursor-pointer hidden md:block"
-          size={28}
-        />
-        <BiMessageDetail
-          className="text-gray-500 cursor-pointer hidden md:block"
-          size={28}
-        />
-
-        {/* <img
-          src="https://png.pngtree.com/thumb_back/fh260/background/20230527/pngtree-cartoon-of-a-young-woman-smiling-on-a-black-background-image_2680954.jpg"
-          alt="Profile"
-          className="w-8 h-8 rounded-full cursor-pointer object-cover md:w-10 md:h-10"
-        /> */}
+        
       </div>
     </div>
   );

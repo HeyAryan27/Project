@@ -28,7 +28,7 @@ export default function PieChartWithPaddingAngle() {
             innerRadius: 90, 
             outerRadius: 80,
             data,
-            color: '#FF69B4', 
+            color: '#BD7D49', 
           },
           {
             startAngle: -90 + endAngle, 

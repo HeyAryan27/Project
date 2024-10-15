@@ -33,13 +33,14 @@ const ProjectTimeline = () => {
         {milestones.map((milestone, index) => (
           <div key={index} className="relative flex items-start space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 mb-4 sm:mb-6">
         
-            <div className="flex items-center justify-center bg-teal-100 text-teal-600 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full">
-              <FaFlag className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
-            </div>
+            
 
         
             <div className="bg-white border border-teal-200 rounded-lg p-3 md:p-4 lg:p-5 w-full max-w-[80%] sm:max-w-[90%] lg:max-w-[95%] shadow-sm">
-              <h3 className="text-sm md:text-base lg:text-lg font-semibold">{milestone.name}</h3>
+            
+              <h3 className="text-sm md:text-base lg:text-lg font-semibold"> <div className="flex items-center justify-center bg-teal-100 text-teal-600 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full">
+              <FaFlag className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
+            </div>{milestone.name}</h3>
               <div className="flex items-center text-gray-500 text-xs md:text-sm lg:text-base space-x-1 md:space-x-2 mt-1 md:mt-2">
                 <FaCalendarAlt className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
                 <span>{milestone.date}</span>
@@ -51,7 +52,7 @@ const ProjectTimeline = () => {
 
   
       <div className="w-full mt-4 sm:mt-6 flex justify-center">
-        <button className="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-md shadow-sm text-sm md:text-base">
+        <button className="border border-gray-300 mr-56 bg-white hover:bg-gray-50 text-gray-700 px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-md shadow-sm text-sm md:text-base">
           Check More 
         </button>
       </div>
