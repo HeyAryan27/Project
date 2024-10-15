@@ -41,12 +41,12 @@ export default function PieChartWithPaddingAngle() {
         ]}
         margin={{ right: 5 }}
         width={200}
-        height={200}
+        height={170}
         slotProps={{
           legend: { hidden: true },
         }}
       />
-      <div className="absolute inset-0 -mt-10 flex items-center text-3xl justify-center font-semibold">
+      <div className="absolute inset-0 -mt-10 ml-3 flex items-center text-3xl justify-center font-semibold">
         {percentage}%
       </div>
     </Stack>

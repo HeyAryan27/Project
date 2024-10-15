@@ -13,7 +13,7 @@ const MyTeams = () => {
   ];
 
   return (
-    <div className="col-span-1 w-full bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-96 lg:w-full">
+    <div className="col-span-1 w-full bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px] lg:w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="font-semibold text-base sm:text-lg">
           Project Overview
@@ -23,7 +23,7 @@ const MyTeams = () => {
         </h2>
       </div>
 
-      <div className="relative flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:h-full">
+      <div className="relative flex flex-col lg:flex-row items-center lg:flex-start lg:h-full">
         <div className="flex justify-center lg:justify-start">
           <PieChart className="lg:mb-28" width={180} height={250}>
             <Pie
@@ -49,7 +49,7 @@ const MyTeams = () => {
           </PieChart>
         </div>
 
-        <div className="absolute top-28 lg:top-20 lg:left-8   text-center lg:text-left">
+        <div className="absolute top-[10vh] lg:top-30 lg:left-8   text-center lg:text-left">
           <span className="text-xl sm:text-2xl font-bold text-gray-700">
             {data.progress}%
             <p className="text-xs text-gray-600 mt-1 sm:mt-2 ">
@@ -58,50 +58,52 @@ const MyTeams = () => {
           </span>
         </div>
 
-        <div className="mt-8 lg:mt-0 grid grid-cols-1 lg:grid-cols-3 lg:w-auto lg:h-full lg:justify-between">
-          <ul className="text-sm space-y-4 sm:space-y-6 lg:space-y-8">
-            <li className="flex items-center -mt-1">
-              <span className="w-5 h-4 rounded-full bg-blue-500 mr-2"></span>
-              Ground Floor: 
+        <div style={{marginTop: "100px"}} className="lg:mt-0 ml-6 grid grid-cols-1 lg:grid-cols-3 gap-2 lg:w-auto lg:h-full lg:justify-between">
+          <ul className="text-sm ml-2" style={{padding: "0px"}}>
+            <li style={{width: "120%"}}  className="flex items-center -mt-1">
+              <span  className="w-2 h-2 rounded-full bg-blue-500 mr-2 flex items-center justify-center"></span>
+              <span style={{fontSize: "11px"}}>Ground Floor </span>
              
             </li>
-            <b className="ml-6">{data.attendance.details.InOffice}%</b>
-            <li className="flex items-center mt-2">
-              <span className="w-4 h-4 rounded-full bg-yellow-500 mr-2"></span>
-              Third Floor: 
+            <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.InOffice}%</span>
+            <li style={{width: "120%"}}  className="flex items-center mt-4">
+              <span className="w-2 h-2 rounded-full bg-yellow-500 mr-2 flex items-center justify-center"></span>
+              
+              <span style={{fontSize: "11px"}}>Third Floor  </span>
              
-            </li> <b className="ml-6 ">{data.attendance.details.Halfday}%</b>
+            </li> <span style={{fontSize: "20px", fontWeight: 600}}  className="ml-6 ">{data.attendance.details.Halfday}%</span>
 
           </ul>
 
-          <ul className="text-sm space-y-4 sm:space-y-6 lg:space-y-8 lg:-mt-2">
-            <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-red-500 mr-2"></span>
-              First Floor:
-             
+          <ul className="text-sm ml-2" style={{padding: "0px"}}>
+            <li style={{width: "120%"}}  className="flex items-center -mt-1">
+              <span className="w-2 h-2 rounded-full bg-red-500 mr-2 flex items-center justify-center"></span>
+              
+              <span style={{fontSize: "11px"}}>First Floor  </span>
             </li>
-            <b className="ml-6">{data.attendance.details.Workfromhome}%</b>
-            <li className="flex items-center mt-2">
-              <span className="w-5 h-4 rounded-full bg-orange-500 mr-2"></span>
-              Kitchen Floor:
+            <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Workfromhome}%</span>
+            <li style={{width: "120%"}}  className="flex items-center mt-4">
+              <span className="w-2 h-2 rounded-full bg-orange-500 mr-2 flex items-center justify-center"></span>
+              
+              <span style={{fontSize: "11px"}}>Kitchen Floor  </span>
               
             </li>
-            <b className="ml-6">{data.attendance.details.Onleave}%</b>
+            <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Onleave}%</span>
           </ul>
 
-          <ul className="text-sm space-y-2 lg:space-y-4 lg:-mt-2">
-            <li className="flex items-center">
-              <span className="w-5 h-4 rounded-full bg-pink-500 mr-2"></span>
-              Second Floor: 
+          <ul className="text-sm ml-2" style={{padding: "0px"}}>
+            <li style={{width: "120%"}} className="flex items-center -mt-1">
+              <span className="w-2 h-2 rounded-full bg-pink-500 mr-2 flex items-center justify-center"></span>
               
+              <span style={{fontSize: "11px"}}>Second Floor </span>
             </li>
-            <b className="ml-6">{data.attendance.details.Workfromhome}%</b>
-            <li className="flex items-center mt-8 lg:mt-8">
-              <span className="w-4 h-4 rounded-full bg-gray-500 mr-2 "></span>
-              Others:  
+            <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Workfromhome}%</span>
+            <li style={{width: "120%"}} className="flex items-center mt-4">
+              <span className="w-2 h-2 rounded-full bg-gray-500 mr-2 flex items-center justify-center"></span>
               
+              <span style={{fontSize: "11px"}}>Others  </span>
             </li>
-            <b className="ml-6">{data.attendance.details.Onleave}%</b>
+            <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Onleave}%</span>
           </ul>
         </div>
       </div>

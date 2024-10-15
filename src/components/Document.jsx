@@ -25,7 +25,7 @@ const documents = [
 
 const Timing = () => {
   return (
-    <div className="col-span-1 w-full lg:w-96 bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-96">
+    <div className="col-span-1 w-full lg:h-[55vh] bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
         <h2 className="font-semibold text-base sm:text-lg">
           Document Repository
