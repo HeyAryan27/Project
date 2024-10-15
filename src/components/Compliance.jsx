@@ -21,7 +21,7 @@ function App() {
           <div className="relative w-full">
             <Charts />
           </div>
-          <p style={{fontSize: "14px"}} className=" text-center font-medium">Water Efficiency is Low</p>
+          <p style={{fontSize: "14px"}} className=" text-center font-medium -mt-12">Water Efficiency is Low</p>
           <p style={{fontSize: "12px"}} className="text-center text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore.
