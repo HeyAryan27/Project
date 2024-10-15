@@ -31,38 +31,41 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         />
       </div>
       <ul className="mt-6 text-xs -ml-8">
-      <li className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
-  <img src={homeLogo} alt="Home" className="w-5 h-5 mr-2" />
-  Home
-</li>
+        <li style={{color: "#344054"}} className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+          <img src={homeLogo} alt="Home" className="w-5 h-5 mr-2" />
+          Home
+        </li>
 
-<li className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+        <li
+          className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left"
+          style={{ color: "#344054" }}
+        >
           <img src={Dashboard} alt="Dashboard" className="w-5 h-5 mr-2" />
           Dashboard
         </li>
-        <li className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+        <li style={{color: "#344054"}} className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
           <img src={Project} alt="Project" className="w-5 h-5 mr-2" />
           Projects
         </li>
-        <li className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+        <li style={{color: "#344054"}} className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
           <img src={Check} alt="Check" className="w-5 h-5 mr-2" />
           Tasks
         </li>
-        <li className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+        <li style={{color: "#344054"}} className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
           <img src={Reporting} alt="Reporting" className="w-5 h-5 mr-2" />
           Reporting
         </li>
-        <li className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+        <li style={{color: "#344054"}} className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
           <img src={User} alt="User" className="w-5 h-5 mr-2" />
           Users
         </li>
       </ul>
       <div className="mt-auto px-4 py-4">
-        <div className="flex items-center -px-8 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+        <div style={{color: "#344054"}} className="flex items-center -px-8 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
           <img src={Support} alt="Support" className="w-5 h-5 mr-2" />
           Support
         </div>
-        <div className="flex items-center -px-8 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
+        <div style={{color: "#344054"}} className="flex items-center -px-8 py-2 text-gray-700 hover:bg-gray-100 font-inter text-[16px] font-semibold leading-[24px] text-left">
           <img src={Setting} alt="Setting" className="w-5 h-5 mr-2" />
           Settings
         </div>

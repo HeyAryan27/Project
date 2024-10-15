@@ -1,5 +1,5 @@
 import React from "react";
-import Vector from '/home/aryan/Documents/Dashs/Dash/src/components/images/Vector.svg';
+import Vector from './images/Vector.svg';
 const documents = [
   {
     name: "First Floor Plan.doc",

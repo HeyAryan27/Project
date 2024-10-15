@@ -38,8 +38,8 @@ const ProjectTimeline = () => {
           >
             <div className="bg-white border border-teal-200 rounded-lg p-2 md:p-3 lg:p-4 w-full max-w-[80%] sm:max-w-[90%] lg:max-w-[95%] shadow-sm">
               <div className="flex gap-2 items-center">
-                <div className="flex items-center justify-center bg-teal-100 text-teal-600 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full">
-                  <FaFlag className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                <div style={{background: "#D1e3e2"}} className="flex items-center justify-center text-teal-600 w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full">
+                  <FaFlag color="#17726d" className="w-4 h-4 md:w-3 md:h-5 lg:w-3 lg:h-5" />
                 </div>
                 <div>
                   <h3 className="text-sm md:text-base lg:text-sm font-semibold">
@@ -56,7 +56,7 @@ const ProjectTimeline = () => {
         ))}
       </div>
 
-      <div className="w-full mt-4 sm:mt-6 flex justify-center lg:justify-start ">
+      <div className="w-full mt-4 ml-6 sm:mt-6 flex justify-center lg:justify-start ">
         <button className="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-md shadow-sm text-sm md:text-base lg:text-sm">
           Check More
         </button>

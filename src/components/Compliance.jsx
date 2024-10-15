@@ -38,7 +38,7 @@ function App() {
             style={{ fontSize: "11px" }}
             className="w-full flex items-center p-3 mb-4 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
-              <span className="inline-flex items-center justify-center h-8 w-8 bg-teal-100 text-teal-900 rounded-full mr-4">
+              <span className="inline-flex items-center justify-center h-8 w-8 bg-white text-teal-900 rounded-full mr-4">
                 &#9889;
               </span>
               Follow these steps to fix water efficiency
@@ -48,7 +48,7 @@ function App() {
             style={{ fontSize: "11px" }}
             className="w-full flex items-center p-3 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
-            <span className="inline-flex items-center justify-center h-8 w-8 bg-teal-100 text-teal-900 rounded-full mr-4">
+            <span className="inline-flex items-center justify-center h-8 w-8 bg-white text-teal-900 rounded-full mr-4">
               &#9889;
             </span>
             Prevent Water Efficiency in Future
