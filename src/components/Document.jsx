@@ -1,30 +1,44 @@
 import React from "react";
 import Vector from './images/Vector.svg';
 import File from './images/File.png'
+import File1 from './images/groundFloor.png'
+import File2 from './images/building.png'
 const documents = [
   {
     name: "First Floor Plan.doc",
     status: "In Progress",
     progress: 70,
-    color: "bg-[#BD7D49]",
-    icon: "bg-[#BD7D49]",
+    key: "first",
+    color: "bg-[rgba(189,125,73,0.7)]",
+    icon: "bg-[rgba(189,125,73,0.2)]",
   },
 
   {
     name: "Ground Floor Plan.doc",
     status: "Rejected",
     progress: 100,
-    color: "bg-[#C11574]",
-    icon: "bg-[#C11574]",
+    key:"ground",
+    color: "bg-[rgba(193,21,116,0.7)]",
+    icon: "bg-[rgba(193,21,116,0.2)]",
   },
   {
     name: "Building Overall Plan.doc",
     status: "Approved",
     progress: 100,
-    color: "bg-[#17726D]",
-    icon: "bg-[#17726D]",
+    key: "building",
+    color: "bg-[rgba(23,114,109,0.7)]",
+    icon: "bg-[rgba(23,114,109,0.2)]",
   },
 ];
+
+const getSource = (key) => {
+  console.log(key)
+  if(key=="ground"){
+    return File1
+  } else if (key =="building"){
+    return File2
+  } else return File
+}
 
 const Timing = () => {
   return (
@@ -65,7 +79,7 @@ const Timing = () => {
             <div
               className={`w-9 h-8 font-inter rounded-full flex justify-center items-center ${doc.icon}`}
             >
-             <img src={File} alt="Dashboard" className="w-8 h-8 " />
+             <img src={getSource(doc?.key)} alt="Dashboard" className="w-8 h-8 " />
             </div>
               
             {/* <img src={File} alt="Dashboard" className="w-8 h-8 mr-2" /> */}
