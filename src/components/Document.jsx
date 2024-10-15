@@ -4,30 +4,32 @@ const documents = [
     name: "First Floor Plan.doc",
     status: "In Progress",
     progress: 70,
-    color: "bg-orange-500",
-    icon: "bg-orange-200",
-  },
+    color: "bg-[#BD7D49]", // Custom brown color
+    icon: "bg-[#BD7D49]", // Lighter brown/tan for the icon (optional, or you can adjust as needed)
+  }
+  
+  ,
   {
     name: "Ground Floor Plan.doc",
     status: "Rejected",
     progress: 100,
-    color: "bg-pink-500",
-    icon: "bg-pink-200",
+    color: "bg-[#C11574]",
+    icon: "bg-[#C11574]",
   },
   {
     name: "Building Overall Plan.doc",
     status: "Approved",
     progress: 100,
-    color: "bg-teal-500",
-    icon: "bg-teal-200",
+    color: "bg-[#17726D]",
+    icon: "bg-[#17726D]",
   },
 ];
 
 const Timing = () => {
   return (
-    <div className="col-span-1 w-full lg:h-[55vh] bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]">
+    <div className="col-span-1 w-full lg:h-[350px] bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-        <h2 className="font-semibold text-base sm:text-lg">
+        <h2 className="font-inter text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left">
           Document Repository
           <p className="text-xs text-gray-600 mt-1 sm:mt-2 md:mt-0">
             You can check overview of project here
@@ -37,7 +39,7 @@ const Timing = () => {
 
     
       <div className="mb-4">
-        <label className="w-full flex justify-center items-center px-4 py-2 bg-gray-100 text-blue-500 rounded-lg border border-gray-300 cursor-pointer hover:bg-gray-200 transition-all">
+        <label className="w-full flex justify-center items-center px-4 py-2 bg-white-100 text-black-500 rounded-lg border border-black-300 cursor-pointer hover:bg-gray-200 transition-all">
           <svg
             className="w-5 h-5 mr-2"
             fill="none"
@@ -63,7 +65,7 @@ const Timing = () => {
           <div key={index} className="flex items-center space-x-4">
           
             <div
-              className={`w-8 h-8 rounded-full flex justify-center items-center ${doc.icon}`}
+              className={`w-9 h-8 font-inter rounded-full flex justify-center items-center ${doc.icon}`}
             >
               <svg
                 className="w-5 h-5 text-white"
@@ -81,7 +83,7 @@ const Timing = () => {
           
             <div className="w-full">
               <div className="flex justify-between items-center">
-                <span className="font-medium">{doc.name}</span>
+                <span className="font-medium" style={{fontSize: "13px", color: "#194185"}}>{doc.name}</span>
                 <span
                   className={`text-sm font-medium ${
                     doc.status === "Approved"
@@ -90,6 +92,7 @@ const Timing = () => {
                       ? "text-pink-500"
                       : "text-orange-500"
                   }`}
+                  style={{fontSize: "13px"}}
                 >
                   {doc.status}
                 </span>
@@ -99,7 +102,7 @@ const Timing = () => {
                 <div className="h-1 bg-gray-200 rounded-full">
                   <div
                     className={`h-full rounded-full ${doc.color}`}
-                    style={{ width: `${doc.progress}%` }}
+                    style={{ width: `${doc.progress}%`,fontSize: "13px" }}
                   ></div>
                 </div>
               </div>

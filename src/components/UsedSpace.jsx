@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 const UsedSpace = () => {
   return (
-    <div className="flex items-center p-4 bg-gray-50 rounded-md shadow-sm mt-4 mx-4">
+    <div className="flex flex-column flex-start p-4 gap-2 rounded-md shadow-sm mt-4 mx-4 bg-[#F5F0EB]">
       <div className="relative flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-full mr-4">
-        <span className="text-indigo-600 font-bold">80%</span>
+        <span style={{color: "#17726D"}} className="text-indigo-600 font-bold">80%</span>
         <div className="absolute">
           <svg className="w-16 h-16">
             <circle
@@ -16,7 +15,8 @@ const UsedSpace = () => {
               stroke="currentColor"
               strokeWidth="4"
               fill="none"
-              className="text-indigo-200"
+              // className="text-indigo-200"
+              color='#17726D'
             />
             <circle 
               cx="32"
@@ -27,19 +27,20 @@ const UsedSpace = () => {
               fill="none"
               strokeDasharray="175"
               strokeDashoffset="35"
-              className="text-indigo-600"
+              // className="text-indigo-600"
+              color='#17726D'
             />
           </svg>
         </div>
        </div>
       <div className="flex-1">
-        <div className="text-gray-800 font-semibold">Used space</div>
-        <div className="text-sm text-gray-500">
+        <div style={{fontSize: "12px"}} className="text-gray-800 font-semibold">Used space</div>
+        <div style={{fontSize: "12px"}} className="text-sm text-gray-500">
           Your team has used 80% of your available space. Need more?
         </div>
         <div className="flex mt-2">
-          <button className="text-sm text-indigo-600 mr-4">Dismiss</button>
-          <button className="text-sm text-indigo-600">Upgrade plan</button>
+          <button style={{fontSize: "12px"}} className="text-sm text-indigo-600 mr-4">Dismiss</button>
+          <button style={{fontSize: "12px"}} className="text-sm text-indigo-600">Upgrade plan</button>
         </div>
       </div>
      
