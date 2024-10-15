@@ -23,7 +23,7 @@ const MyTeams = () => {
         </h2>
       </div>
 
-      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full xl:ml-2  2xl:ml-20">
+      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full xl:ml-2   2xl:ml-20">
         <div className="flex font-inter justify-center lg:justify-start">
           <PieChart className="lg:mb-28" width={180} height={250}>
             <Pie
@@ -58,9 +58,9 @@ const MyTeams = () => {
           </span>
         </div>
 
-        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between 2xl:ml-44">
-          <ul className="text-sm ml-2 " style={{padding: "0px"}}>
-            <li style={{width: "120%"}}  className="flex items-center -mt-1">
+        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between   2xl:ml-44">
+          <ul className="text-sm ml-2 " style={{padding: "6px"}}>
+            <li style={{width: "130%"}}  className="flex items-center -mt-1">
               <span  className="w-2 h-2 font-inter rounded-full bg-[#2E90FA] mr-2 flex items-center justify-center"></span>
               <span className="font-inter" style={{fontSize: "13px"}}>Ground Floor </span>
              
@@ -75,7 +75,7 @@ const MyTeams = () => {
 
           </ul>
 
-          <ul className="text-sm ml-2 font-inter" style={{padding: "0px"}}>
+          <ul className="text-sm ml-2 font-inter" style={{padding: "6px"}}>
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
               <span className="w-2 h-2 font-inter rounded-full bg-[#F79009] mr-2 flex items-center justify-center"></span>
               
@@ -91,7 +91,7 @@ const MyTeams = () => {
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Onleave}%</span>
           </ul>
 
-          <ul className="text-sm ml-2" style={{padding: "0px"}}>
+          <ul className="text-sm ml-2" style={{padding: "6px"}}>  
             <li style={{width: "120%"}} className="flex items-center -mt-1">
               <span className="w-2 h-2 font-inter rounded-full bg-[#12B76A] mr-2 flex items-center justify-center"></span>
               
