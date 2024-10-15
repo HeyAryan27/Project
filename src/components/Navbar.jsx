@@ -39,7 +39,7 @@ const Navbar = ({ toggleSidebar }) => {
 
       <button className="cursor-pointer hidden md:block">
       <img src={Create} alt="Create" className="w-8 h-8 mr-2" /></button>
-       <FiBell className="text-gray-500 cursor-pointer hidden md:block" size={24} /> 
+       <FiBell className="text-gray-500 cursor-pointer hidden md:block" size={20} /> 
 
        <button className="cursor-pointer hidden md:block">
        <img src={Profile} alt="Profile" className="w-8 h-8 mr-2" />
