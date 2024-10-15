@@ -23,7 +23,7 @@ const MyTeams = () => {
         </h2>
       </div>
 
-      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full  2xl:ml-24">
+      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full xl:ml-2  2xl:ml-20">
         <div className="flex font-inter justify-center lg:justify-start">
           <PieChart className="lg:mb-28" width={180} height={250}>
             <Pie
@@ -58,7 +58,7 @@ const MyTeams = () => {
           </span>
         </div>
 
-        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between xl:space-x-5 2xl:ml-60">
+        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between xl:space-x-5 2xl:ml-44">
           <ul className="text-sm ml-2 " style={{padding: "0px"}}>
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
               <span  className="w-2 h-2 font-inter rounded-full bg-[#2E90FA] mr-2 flex items-center justify-center"></span>
