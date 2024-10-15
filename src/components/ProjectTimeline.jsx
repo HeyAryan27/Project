@@ -23,7 +23,7 @@ const ProjectTimeline = () => {
         <h2 className="text-base md:text-lg lg:text-xl font-semibold">
           Project Timeline
         </h2>
-        <p className="text-xs sm:text-sm lg:text-base text-gray-500">
+        <p className="text-xs sm:text-sm lg:text-sm text-gray-500">
           You can check the timeline of the project here
         </p>
       </div>
@@ -42,11 +42,11 @@ const ProjectTimeline = () => {
                   <FaFlag className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
                 </div>
                 <div>
-                  <h3 className="text-sm md:text-base lg:text-lg font-semibold">
+                  <h3 className="text-sm md:text-base lg:text-sm font-semibold">
                     {milestone.name}
                   </h3>
-                  <div className="flex items-center text-gray-500 text-xs md:text-sm lg:text-base space-x-1 md:space-x-2">
-                    <FaCalendarAlt className="w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5" />
+                  <div className="flex items-center text-gray-500 text-xs md:text-sm  lg:text-xs space-x-1 md:space-x-2">
+                    <FaCalendarAlt className="w-3 h-3 md:w-4 md:h-4 lg:w-2 lg:h-3" />
                     <span>{milestone.date}</span>
                   </div>
                 </div>
@@ -56,8 +56,8 @@ const ProjectTimeline = () => {
         ))}
       </div>
 
-      <div className="w-full mt-4 sm:mt-6 flex justify-center lg:justify-start">
-        <button className="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-md shadow-sm text-sm md:text-base">
+      <div className="w-full mt-4 sm:mt-6 flex justify-center lg:justify-start ">
+        <button className="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-md shadow-sm text-sm md:text-base lg:text-sm">
           Check More
         </button>
       </div>

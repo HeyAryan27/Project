@@ -34,13 +34,15 @@ const Navbar = ({ toggleSidebar }) => {
 
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-4">
        
 
       <button className="cursor-pointer hidden md:block">
       <img src={Create} alt="Create" className="w-8 h-8 mr-2" /></button>
-<button className="cursor-pointer hidden md:block">
-      <img src={Notification} alt="Notification" className="w-12 h-12 mr-2" /></button>
+{/* <button className="cursor-pointer hidden md:block">
+      <img src={Notification} alt="Notification" className="w-12 h-12 mr-2" /></button> */}
+       <FiBell className="text-gray-500 cursor-pointer hidden md:block" size={28} /> 
+
        <button className="cursor-pointer hidden md:block">
        <img src={Profile} alt="Profile" className="w-8 h-8 mr-2" />
        </button>
