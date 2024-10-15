@@ -55,7 +55,7 @@ const Timing = () => {
 
       <div className="mb-6 ">
         <label className="w-full flex justify-center items-center px-4 py-2 bg-white-100 text-black-500 rounded-lg border border-black-300 cursor-pointer hover:bg-gray-200 transition-all">
-        <IoCloudDownloadOutline  className="w-18 m-1"/>
+        <IoCloudDownloadOutline  className="w-18 m-2"/>
           <span>Upload Document</span>
           <input type="file" className="hidden" />
         </label>
