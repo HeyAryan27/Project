@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 const UsedSpace = () => {
   return (
-    <div className="flex items-center p-4 bg-gray-50 rounded-md shadow-sm mt-4 mx-4">
+    <div className="flex items-center p-4 bg-gray-50 rounded-md shadow-sm mt-4 mx-4 bg-[#F5F0EB]">
       <div className="relative flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-full mr-4">
         <span className="text-indigo-600 font-bold">80%</span>
         <div className="absolute">

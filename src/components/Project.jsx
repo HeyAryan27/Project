@@ -58,51 +58,38 @@ const MyTeams = () => {
           </span>
         </div>
 
-        <div className="mt-8 lg:mt-0 grid grid-cols-1 lg:grid-cols-3 lg:w-auto lg:h-full lg:justify-between">
-          <ul className="text-sm space-y-4 sm:space-y-6 lg:space-y-8">
-            <li className="flex items-center -mt-1">
-              <span className="w-5 h-4 rounded-full bg-blue-500 mr-2"></span>
-              Ground Floor: 
-             
-            </li>
-            <b className="ml-6">{data.attendance.details.InOffice}%</b>
-            <li className="flex items-center mt-2">
-              <span className="w-4 h-4 rounded-full bg-yellow-500 mr-2"></span>
-              Third Floor: 
-             
-            </li> <b className="ml-6 ">{data.attendance.details.Halfday}%</b>
-
-          </ul>
-
-          <ul className="text-sm space-y-4 sm:space-y-6 lg:space-y-8 lg:-mt-2">
-            <li className="flex items-center">
-              <span className="w-4 h-4 rounded-full bg-red-500 mr-2"></span>
-              First Floor:
-             
-            </li>
-            <b className="ml-6">{data.attendance.details.Workfromhome}%</b>
-            <li className="flex items-center mt-2">
-              <span className="w-5 h-4 rounded-full bg-orange-500 mr-2"></span>
-              Kitchen Floor:
-              
-            </li>
-            <b className="ml-6">{data.attendance.details.Onleave}%</b>
-          </ul>
-
-          <ul className="text-sm space-y-2 lg:space-y-4 lg:-mt-2">
-            <li className="flex items-center">
-              <span className="w-5 h-4 rounded-full bg-pink-500 mr-2"></span>
-              Second Floor: 
-              
-            </li>
-            <b className="ml-6">{data.attendance.details.Workfromhome}%</b>
-            <li className="flex items-center mt-8 lg:mt-8">
-              <span className="w-4 h-4 rounded-full bg-gray-500 mr-2 "></span>
-              Others:  
-              
-            </li>
-            <b className="ml-6">{data.attendance.details.Onleave}%</b>
-          </ul>
+        {/* <div className="mt-8 lg:mt-0 grid grid-cols-1 lg:grid-cols-3 lg:w-auto lg:h-full lg:justify-between"> */}
+      <div className="  grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 lg:-mt-24">
+          <div className="flex flex-col items-start">
+            <span className="w-3 h-3 bg-blue-600 rounded-full mr-2"></span>
+            <span>Ground Floor</span>
+            <span className="text-2xl">26%</span>
+          </div>
+          <div className="flex flex-col items-start">
+            <span className="w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+            <span>First Floor</span>
+            <span className="text-2xl">17%</span>
+          </div>  
+          <div className="flex flex-col items-start">
+            <span className="w-3 h-3 bg-green-600 rounded-full mr-2"></span>
+            <span>Second Floor</span>
+            <span className="text-2xl">5%</span>
+          </div>
+          <div className="flex flex-col items-start">
+            <span className="w-3 h-3 bg-pink-500 rounded-full mr-2"></span>
+            <span>Third Floor</span>
+            <span className="text-2xl">6%</span>
+          </div>
+          <div className="flex flex-col items-start">
+            <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
+            <span>Kitchen Floor</span>
+            <span className="text-2xl">4%</span>
+          </div>
+          <div className="flex flex-col items-start">
+            <span className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></span>
+            <span>Other</span>
+            <span className="text-2xl">10%</span>
+          </div>
         </div>
       </div>
     </div>

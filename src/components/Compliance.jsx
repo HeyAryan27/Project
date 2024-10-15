@@ -22,7 +22,7 @@ function App() {
           <div className="relative w-full">
             <Charts />
           </div>
-          <p className="mt-4 text-center font-medium">Water Efficiency is Low</p>
+          <p className="-mt-16 text-center font-medium">Water Efficiency is Low</p>
           <p className="text-center text-gray-500 text-sm px-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
           </p>
