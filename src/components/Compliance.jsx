@@ -1,5 +1,7 @@
 import React from "react";
 import Charts from "./Charts";
+import File from './images/compliance.png'
+
 
 function App() {
   return (
@@ -52,7 +54,8 @@ function App() {
             className="w-full flex items-center p-3 mb-4 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
             <span className="inline-flex items-center justify-center h-8 w-8 bg-white text-teal-900 rounded-full mr-4">
-              &#9889;
+            <img src={File} alt="Dashboard" className="w-2 h-3 " />
+
             </span>
             Follow these steps to fix water efficiency
           </button>
@@ -62,7 +65,8 @@ function App() {
             className="w-full flex items-center p-3 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
             <span className="inline-flex items-center justify-center h-8 w-8 bg-white text-teal-900 rounded-full mr-4">
-              &#9889;
+              <img src={File} alt="Dashboard" className="w-2 h-3 " />
+
             </span>
             Prevent Water Efficiency in Future
           </button>

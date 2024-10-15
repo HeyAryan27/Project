@@ -1,5 +1,6 @@
 import React from "react";
 import Vector from './images/Vector.svg';
+import File from './images/File.png'
 const documents = [
   {
     name: "First Floor Plan.doc",
@@ -37,7 +38,7 @@ const Timing = () => {
         </h2>
       </div>
 
-      <div className="mb-4">
+      <div className="mb-6 ">
         <label className="w-full flex justify-center items-center px-4 py-2 bg-white-100 text-black-500 rounded-lg border border-black-300 cursor-pointer hover:bg-gray-200 transition-all">
           <svg
             className="w-5 h-5 mr-2"
@@ -58,24 +59,17 @@ const Timing = () => {
         </label>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-7">
         {documents.map((doc, index) => (
           <div key={index} className="flex items-center space-x-4">
             <div
               className={`w-9 h-8 font-inter rounded-full flex justify-center items-center ${doc.icon}`}
             >
-              <svg
-                className="w-5 h-5 text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M9 2a1 1 0 00-1 1v4a1 1 0 001 1h5a1 1 0 001-1V3a1 1 0 00-1-1H9zM4 3a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1V3zm6 7a1 1 0 011 1v7a1 1 0 01-2 0v-7a1 1 0 011-1z"   
-                  clipRule="evenodd"
-                />
-              </svg>
+             <img src={File} alt="Dashboard" className="w-8 h-8 " />
             </div>
+              
+            {/* <img src={File} alt="Dashboard" className="w-8 h-8 mr-2" /> */}
+            {/* <img src={File1} alt="Dashboard" className="w-8 h-8 mr-2" /> */}
 
             <div className="w-full">
               <div className="flex justify-between items-center">
