@@ -49,7 +49,7 @@ const MyTeams = () => {
           </PieChart>
         </div>
 
-        <div className="absolute font-inter top-[10vh] lg:top-30 lg:left-8   text-center lg:text-left">
+        <div className="absolute font-inter top-[10vh] mt-10 sm:mt-10 md:mt-10   lg:-mt-1 lg:left-8   text-center lg:text-left">
           <span className="text-xl sm:text-2xl font-bold text-gray-700">
             {data.progress}%
             <p className="text-xs font-inter text-gray-600 mt-1 sm:mt-2 ">
@@ -58,16 +58,16 @@ const MyTeams = () => {
           </span>
         </div>
 
-        <div style={{marginTop: "100px"}} className="lg:mt-0 ml-6 grid grid-cols-1 lg:grid-cols-3 gap-2 lg:w-auto lg:h-full lg:justify-between">
+        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between">
           <ul className="text-sm ml-2" style={{padding: "0px"}}>
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
-              <span  className="w-2 h-2 font-inter rounded-full bg-blue-500 mr-2 flex items-center justify-center"></span>
+              <span  className="w-2 h-2 font-inter rounded-full bg-[#2E90FA] mr-2 flex items-center justify-center"></span>
               <span className="font-inter" style={{fontSize: "11px"}}>Ground Floor </span>
              
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.InOffice}%</span>
             <li style={{width: "120%"}}  className="flex items-center mt-4">
-              <span className="w-2 h-2 font-inter rounded-full bg-yellow-500 mr-2 flex items-center justify-center"></span>
+              <span className="w-2 h-2 font-inter rounded-full bg-[#EE46BC] mr-2 flex items-center justify-center"></span>
               
               <span style={{fontSize: "11px"}}>Third Floor  </span>
              
@@ -77,13 +77,13 @@ const MyTeams = () => {
 
           <ul className="text-sm ml-2 font-inter" style={{padding: "0px"}}>
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
-              <span className="w-2 h-2 font-inter rounded-full bg-red-500 mr-2 flex items-center justify-center"></span>
+              <span className="w-2 h-2 font-inter rounded-full bg-[#F79009] mr-2 flex items-center justify-center"></span>
               
               <span style={{fontSize: "11px"}}>First Floor  </span>
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Workfromhome}%</span>
             <li style={{width: "120%"}}  className="flex items-center mt-4">
-              <span className="w-2 h-2 rounded-full bg-orange-500 mr-2 flex items-center justify-center"></span>
+              <span className="w-2 h-2 rounded-full bg-[#6172F3] mr-2 flex items-center justify-center"></span>
               
               <span className="font-inter" style={{fontSize: "11px"}}>Kitchen Floor  </span>
               
@@ -93,13 +93,13 @@ const MyTeams = () => {
 
           <ul className="text-sm ml-2" style={{padding: "0px"}}>
             <li style={{width: "120%"}} className="flex items-center -mt-1">
-              <span className="w-2 h-2 font-inter rounded-full bg-pink-500 mr-2 flex items-center justify-center"></span>
+              <span className="w-2 h-2 font-inter rounded-full bg-[#12B76A] mr-2 flex items-center justify-center"></span>
               
               <span className="font-inter" style={{fontSize: "11px"}}>Second Floor </span>
             </li>
             <span style={{fontSize: "20px", fontWeight: 600}} className="ml-6">{data.attendance.details.Workfromhome}%</span>
             <li style={{width: "120%"}} className="flex items-center mt-4">
-              <span className="w-2 h-2 font-inter rounded-full bg-gray-500 mr-2 flex items-center justify-center"></span>
+              <span className="w-2 h-2 font-inter rounded-full bg-[#4E5BA6] mr-2 flex items-center justify-center"></span>
               
               <span style={{fontSize: "11px"}}>Others  </span>
             </li>

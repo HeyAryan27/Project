@@ -1,11 +1,12 @@
 import React from "react";
+import FileSvg from '/home/aryan/Documents/Dashs/Dash/src/components/images/File.svg';
 const documents = [
   {
     name: "First Floor Plan.doc",
     status: "In Progress",
     progress: 70,
-    color: "bg-[#BD7D49]", // Custom brown color
-    icon: "bg-[#BD7D49]", // Lighter brown/tan for the icon (optional, or you can adjust as needed)
+    color: "bg-[#BD7D49]", 
+    icon: "bg-[#BD7D49]", 
   }
   
   ,
@@ -27,7 +28,7 @@ const documents = [
 
 const Timing = () => {
   return (
-    <div className="col-span-1 w-full lg:h-[350px] bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]">
+    <div className="col-span-1 w-full  bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
         <h2 className="font-inter text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left">
           Document Repository
@@ -72,11 +73,11 @@ const Timing = () => {
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M9 2a1 1 0 00-1 1v4a1 1 0 001 1h5a1 1 0 001-1V3a1 1 0 00-1-1H9zM4 3a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1V3zm6 7a1 1 0 011 1v7a1 1 0 01-2 0v-7a1 1 0 011-1z"
-                  clipRule="evenodd"
-                />
+                 <path
+    fillRule="evenodd"
+    d="M9 2a1 1 0 00-1 1v4a1 1 0 001 1h5a1 1 0 001-1V3a1 1 0 00-1-1H9zM4 3a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1V3zm6 7a1 1 0 011 1v7a1 1 0 01-2 0v-7a1 1 0 011-1z"
+    clipRule="evenodd"
+  />
               </svg>
             </div>
 

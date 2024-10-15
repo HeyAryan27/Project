@@ -36,7 +36,7 @@ function App() {
 
           <button
             style={{ fontSize: "11px" }}
-            className="w-full flex items-center p-3 mb-4 bg-orange-100 text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
+            className="w-full flex items-center p-3 mb-4 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
               <span className="inline-flex items-center justify-center h-8 w-8 bg-teal-100 text-teal-900 rounded-full mr-4">
                 &#9889;
@@ -46,7 +46,7 @@ function App() {
 
           <button
             style={{ fontSize: "11px" }}
-            className="w-full flex items-center p-3 bg-orange-100 text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
+            className="w-full flex items-center p-3 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
             <span className="inline-flex items-center justify-center h-8 w-8 bg-teal-100 text-teal-900 rounded-full mr-4">
               &#9889;

@@ -4,7 +4,7 @@ import { PieChart } from '@mui/x-charts/PieChart';
 
 
 const data = [
-  { value: 55, color: '#964B00' }, 
+  { value: 55, color: '#BD7D49' }, 
 ];
 
 const calculateEndAngle = (percentage) => {
