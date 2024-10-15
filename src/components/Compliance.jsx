@@ -11,7 +11,10 @@ function App() {
             You can check an overview of the project here
           </p>
         </div>
-        <span className="mt-2 lg:mt-0 text-sm font-medium bg-green-100 text-teal-700 px-3 py-1 rounded-full">
+        <span
+          style={{ background: "#D1e3e2" }}
+          className="mt-2 font-inter lg:mt-0 text-sm font-medium bg-green-100 text-teal-700 px-3 py-1 rounded-full"
+        >
           Non-compliant
         </span>
       </div>
@@ -21,11 +24,21 @@ function App() {
           <div className="relative w-full">
             <Charts />
           </div>
-          <p style={{fontSize: "14px"}} className=" text-center font-medium">Water Efficiency is Low</p>
-          <p style={{fontSize: "12px"}} className="text-center text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </p>
+          <div style={{position: "absolute", width: "190px", marginTop: "200px"}}>
+              <p
+                style={{ fontSize: "14px" }}
+                className=" text-left font-medium mb-3"
+              >
+                Water Efficiency is Low
+              </p>
+              <p
+                style={{ fontSize: "12px" }}
+                className="text-left text-gray-500"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+          </div>
         </div>
 
         <div className="w-full lg:w-2/3 lg:pl-6">
@@ -35,17 +48,17 @@ function App() {
           </p>
 
           <button
-            style={{ fontSize: "11px" }}
+            style={{ fontSize: "11px", fontWeight: 500, color: "black" }}
             className="w-full flex items-center p-3 mb-4 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
-              <span className="inline-flex items-center justify-center h-8 w-8 bg-white text-teal-900 rounded-full mr-4">
-                &#9889;
-              </span>
-              Follow these steps to fix water efficiency
+            <span className="inline-flex items-center justify-center h-8 w-8 bg-white text-teal-900 rounded-full mr-4">
+              &#9889;
+            </span>
+            Follow these steps to fix water efficiency
           </button>
 
           <button
-            style={{ fontSize: "11px" }}
+            style={{ fontSize: "11px", fontWeight: 500, color: "black" }}
             className="w-full flex items-center p-3 bg-[#BD7D4929] text-teal-900 rounded-lg shadow-sm hover:bg-orange-200"
           >
             <span className="inline-flex items-center justify-center h-8 w-8 bg-white text-teal-900 rounded-full mr-4">
