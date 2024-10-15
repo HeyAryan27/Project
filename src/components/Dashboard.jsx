@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   return (
     <div className="">
-      <div className=" flex flex-col lg:flex-row flex-wrap gap-4 ">
+      <div className=" flex flex-col lg:flex-row flex-wrap gap-4 -mt-7 ">
         <div className="flex-1 w-full lg:w-auto h-full">
           <MyTeams />
         </div>

@@ -23,7 +23,7 @@ const MyTeams = () => {
         </h2>
       </div>
 
-      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full 2xl:ml-24">
+      <div className="relative font-inter flex flex-col lg:flex-row items-center lg:flex-start lg:h-full  2xl:ml-24">
         <div className="flex font-inter justify-center lg:justify-start">
           <PieChart className="lg:mb-28" width={180} height={250}>
             <Pie
@@ -49,7 +49,7 @@ const MyTeams = () => {
           </PieChart>
         </div>
 
-        <div className="absolute font-inter top-[10vh] mt-10 sm:mt-10 md:mt-10   lg:-mt-1 lg:left-8   text-center lg:text-left">
+        <div className="absolute font-inter top-[10vh] mt-10 sm:mt-10 md:mt-10   lg:-mt-1 lg:left-8   text-center lg:text-left ">
           <span className="text-xl sm:text-2xl font-bold text-gray-700">
             {data.progress}%
             <p className="text-xs font-inter text-gray-600 mt-1 sm:mt-2 ">
@@ -58,8 +58,8 @@ const MyTeams = () => {
           </span>
         </div>
 
-        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between 2xl:ml-60">
-          <ul className="text-sm ml-2" style={{padding: "0px"}}>
+        <div  className="  ml-6 grid grid-cols-1 lg:grid-cols-3 lg:mt-16 gap-2 lg:w-auto lg:h-full lg:justify-between xl:space-x-5 2xl:ml-60">
+          <ul className="text-sm ml-2 " style={{padding: "0px"}}>
             <li style={{width: "120%"}}  className="flex items-center -mt-1">
               <span  className="w-2 h-2 font-inter rounded-full bg-[#2E90FA] mr-2 flex items-center justify-center"></span>
               <span className="font-inter" style={{fontSize: "13px"}}>Ground Floor </span>

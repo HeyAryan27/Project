@@ -20,21 +20,21 @@ const Navbar = ({ toggleSidebar }) => {
 
   return (
     <div className="bg-[#FFFAF5]  p-4    shadow-md  h-16 flex justify-between items-center">
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center">
         <FiMenu
           className="text-gray-800 cursor-pointer md:hidden"
           size={24}
           onClick={toggleSidebar}
         />
         {
-         <h1 className="font-inter text-[20px] font-medium leading-[38px] text-left text-gray-800">
+         <h1 className=" font-inter text-[20px] font-medium leading-[38px] text-left text-gray-800 " >
          Green Building Monitoring
        </h1>
         }
 
       </div>
 
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-5">
        
 
       <button className="cursor-pointer hidden md:block">
