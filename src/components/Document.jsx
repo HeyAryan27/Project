@@ -2,7 +2,7 @@ import React from "react";
 import Vector from '/home/aryan/Documents/Dashs/Dash/src/components/images/Vector.svg';
 import { FiBell } from "react-icons/fi";
 import File from '/home/aryan/Documents/Dashs/Dash/src/components/images/File.png'
-import File1 from '/home/aryan/Documents/Dashs/Dash/src/components/images/File1.png'
+import Vector from './images/Vector.svg';
 const documents = [
   {
     name: "First Floor Plan.doc",
