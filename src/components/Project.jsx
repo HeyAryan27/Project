@@ -20,11 +20,11 @@ const MyTeams = () => {
       <div className="flex justify-between items-center mb-4">
         <h2 className="font-inter text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left items-center">
           Project Overview
-          <p className="text-xs font-inter text-gray-600 mt-1 sm:mt-2">
+          <p className="font-inter text-sm font-normal leading-5 tracking-[-0.01em] text-left text-gray-600 mt-1 sm:mt-2">
             You can check overview
           </p>
         </h2>
-      </div>
+      </div> 
 
       <div className=" font-inter flex flex-col gap-4 lg:flex-row items-center lg:flex-start justify-around">
         <div className="relative">
@@ -61,10 +61,13 @@ const MyTeams = () => {
 
           <div className="absolute font-inter right-[25px] top-[50px] mt-4 sm:mt-10 md:mt-4   lg:-mt-1 lg:left-8   text-center lg:text-left ">
             <span className="text-xl sm:text-xl font-bold text-gray-700">
-              {data.progress}%
+              <span className="font-inter text-[38px] font-semibold leading-[38px] text-center">
+                {data.progress}%
+              </span>
+
               <p
                 style={{ fontSize: "11px" }}
-                className="text-xs font-inter text-gray-600 mt-1 sm:mt-2 "
+                className="text-sm font-inter text-gray-600 mt-1 sm:mt-2 "
               >
                 Overall completion <br></br>percentage
               </p>
@@ -88,26 +91,7 @@ const MyTeams = () => {
                 className="font-inter"
                 style={{ fontSize: "22px", fontWeight: 600 }}
               >
-                {data.attendance.details.InOffice}%
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row gap-2">
-            <div>
-              <div className="font-inter w-[8px] h-[8px] mt-[4px] rounded-lg bg-[#EE46BC]"></div>
-            </div>
-            <div className=" flex flex-column align-left justify-start">
-              <div
-                className="font-inter"
-                style={{ fontSize: "13px", color: "#475467" }}
-              >
-                Third Floor{" "}
-              </div>
-              <div
-                className="font-inter"
-                style={{ fontSize: "22px", fontWeight: 600 }}
-              >
-                {data.attendance.details.Halfday}%
+                {data.attendance.details.Ground}%
               </div>
             </div>
           </div>
@@ -126,26 +110,7 @@ const MyTeams = () => {
                 className="font-inter"
                 style={{ fontSize: "22px", fontWeight: 600 }}
               >
-                {data.attendance.details.Workfromhome}%
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row gap-2">
-            <div>
-              <div className="font-inter w-[8px] h-[8px] mt-[4px] rounded-lg bg-[#6172F3]"></div>
-            </div>
-            <div className=" flex flex-column align-left justify-start">
-              <div
-                className="font-inter"
-                style={{ fontSize: "13px", color: "#475467" }}
-              >
-                Kitchen Floor{" "}
-              </div>
-              <div
-                className="font-inter"
-                style={{ fontSize: "22px", fontWeight: 600 }}
-              >
-                {data.attendance.details.Onleave}%
+                {data.attendance.details.First}%
               </div>
             </div>
           </div>
@@ -164,7 +129,45 @@ const MyTeams = () => {
                 className="font-inter"
                 style={{ fontSize: "22px", fontWeight: 600 }}
               >
-                {data.attendance.details.Workfromhome}%
+                {data.attendance.details.Second}%
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row gap-2">
+            <div>
+              <div className="font-inter w-[8px] h-[8px] mt-[4px] rounded-lg bg-[#EE46BC]"></div>
+            </div>
+            <div className=" flex flex-column align-left justify-start">
+              <div
+                className="font-inter"
+                style={{ fontSize: "13px", color: "#475467" }}
+              >
+                Third Floor{" "}
+              </div>
+              <div
+                className="font-inter"
+                style={{ fontSize: "22px", fontWeight: 600 }}
+              >
+                {data.attendance.details.Third}%
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row gap-2">
+            <div>
+              <div className="font-inter w-[8px] h-[8px] mt-[4px] rounded-lg bg-[#6172F3]"></div>
+            </div>
+            <div className=" flex flex-column align-left justify-start">
+              <div
+                className="font-inter"
+                style={{ fontSize: "13px", color: "#475467" }}
+              >
+                Kitchen Floor{" "}
+              </div>
+              <div
+                className="font-inter"
+                style={{ fontSize: "22px", fontWeight: 600 }}
+              >
+                {data.attendance.details.Kitchen}%
               </div>
             </div>
           </div>
@@ -183,7 +186,7 @@ const MyTeams = () => {
                 className="font-inter"
                 style={{ fontSize: "22px", fontWeight: 600 }}
               >
-                {data.attendance.details.Onleave}%
+                {data.attendance.details.Others}%
               </div>
             </div>
           </div>

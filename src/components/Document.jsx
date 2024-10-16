@@ -1,8 +1,7 @@
 import React from "react";
-import Vector from './images/Vector.svg';
-import File from './images/File.png'
-import File1 from './images/groundFloor.png'
-import File2 from './images/building.png'
+import File from "./images/File.png";
+import File1 from "./images/groundFloor.png";
+import File2 from "./images/building.png";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 const documents = [
   {
@@ -18,7 +17,7 @@ const documents = [
     name: "Ground Floor Plan.doc",
     status: "Rejected",
     progress: 100,
-    key:"ground",
+    key: "ground",
     color: "bg-[rgba(193,21,116,0.7)]",
     icon: "bg-[rgba(193,21,116,0.2)]",
   },
@@ -33,30 +32,35 @@ const documents = [
 ];
 
 const getSource = (key) => {
-  console.log(key)
-  if(key=="ground"){
-    return File1
-  } else if (key =="building"){
-    return File2
-  } else return File
-}
+  console.log(key);
+  if (key == "ground") {
+    return File1;
+  } else if (key == "building") {
+    return File2;
+  } else return File;
+};
 
 const Timing = () => {
   return (
-    <div className="col-span-1 w-full  bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]" style={{ borderColor: 'rgba(189, 125, 73, 0.4)' }}>
+    <div
+      className="col-span-1 w-full  bg-white p-4 sm:p-6 rounded-lg shadow-md border-[1px] lg:h-[350px]"
+      style={{ borderColor: "rgba(189, 125, 73, 0.4)" }}
+    >
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
         <h2 className="font-inter text-[17px] font-medium leading-[23px] tracking-[-0.01em] text-left">
           Document Repository
-          <p className="text-xs text-gray-600 mt-1 sm:mt-2 md:mt-0">
+          <p className="font-inter text-sm font-normal leading-5 tracking-[-0.01em] text-left text-gray-600 mt-1 sm:mt-2 md:mt-0">
             You can check overview of project here
           </p>
         </h2>
       </div>
 
-      <div className="mb-6 ">
-        <label className="w-full flex justify-center items-center px-4 py-2 bg-white-100 text-black-500 rounded-lg border border-black-300 cursor-pointer hover:bg-gray-200 transition-all">
-        <IoCloudDownloadOutline  className="w-10 h-6   "/>
-          <span>Upload Document</span>
+      <div className="mb-6">
+        <label className="w-full flex justify-center items-center px-4 py-2 bg-white text-black-500 rounded-lg border border-black-300 cursor-pointer hover:bg-gray-200 transition-all">
+          <IoCloudDownloadOutline className="w-10 h-6" />
+          <span className="font-inter text-sm font-semibold leading-5 text-left ml-2">
+            Upload Document
+          </span>
           <input type="file" className="hidden" />
         </label>
       </div>
@@ -67,9 +71,13 @@ const Timing = () => {
             <div
               className={`w-9 h-8 font-inter rounded-full flex justify-center items-center ${doc.icon}`}
             >
-             <img src={getSource(doc?.key)} alt="Dashboard" className="w-8 h-8 " />
+              <img
+                src={getSource(doc?.key)}
+                alt="Dashboard"
+                className="w-8 h-8 "
+              />
             </div>
-              
+
             {/* <img src={File} alt="Dashboard" className="w-8 h-8 mr-2" /> */}
             {/* <img src={File1} alt="Dashboard" className="w-8 h-8 mr-2" /> */}
 

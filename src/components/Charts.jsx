@@ -1,42 +1,39 @@
-import * as React from 'react';
-import Stack from '@mui/material/Stack';
-import { PieChart } from '@mui/x-charts/PieChart';
+import * as React from "react";
+import Stack from "@mui/material/Stack";
+import { PieChart } from "@mui/x-charts/PieChart";
 
-
-const data = [
-  { value: 55, color: '#BD7D49' }, 
-];
+const data = [{ value: 55, color: "#BD7D49" }];
 
 const calculateEndAngle = (percentage) => {
-  return (percentage / 100) * 180; 
+  return (percentage / 100) * 180;
 };
 
 export default function PieChartWithPaddingAngle() {
-  const percentage = data[0].value; 
-  const endAngle = calculateEndAngle(percentage); 
-  const remainingPercentage = 100 - percentage; 
-  const remainingEndAngle = calculateEndAngle(remainingPercentage); 
+  const percentage = data[0].value;
+  const endAngle = calculateEndAngle(percentage);
+  const remainingPercentage = 100 - percentage;
+  const remainingEndAngle = calculateEndAngle(remainingPercentage);
 
   return (
     <Stack direction="row" justifyContent="center" alignItems="center">
       <PieChart
         series={[
           {
-            startAngle: -90, 
-            endAngle: -90 + endAngle, 
-            paddingAngle: 5, 
-            innerRadius: 90, 
+            startAngle: -90,
+            endAngle: -90 + endAngle,
+            paddingAngle: 5,
+            innerRadius: 90,
             outerRadius: 80,
             data,
-            color: '#BD7D49', 
+            color: "#BD7D49",
           },
           {
-            startAngle: -90 + endAngle, 
-            endAngle: 90, 
-            paddingAngle: 5, 
-            innerRadius: 90, 
-            outerRadius: 80, 
-            data: [{ value: remainingPercentage, color: 'silver' }], 
+            startAngle: -90 + endAngle,
+            endAngle: 90,
+            paddingAngle: 5,
+            innerRadius: 90,
+            outerRadius: 80,
+            data: [{ value: remainingPercentage, color: "silver" }],
           },
         ]}
         margin={{ right: 5 }}
